@@ -1,0 +1,251 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+.side{
+    box-sizing: border-box;
+    width: 49vw;
+    min-width: 400px;
+    flex-grow: 1;
+    display: flex;
+   
+}
+
+.left{
+    
+    
+    color: #FFF;
+    font-size: 19px;
+    background-image: url("img/backgroundLeft.png");
+    align-items: center;
+    justify-content: center;
+    
+    
+     
+}
+.right{
+    background-color: rgb(21, 32, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+
+.containerOne{
+    display: flex;
+    flex-flow: row;
+    height: 100%;
+    flex-wrap: wrap-reverse;
+}
+
+.containerLeft{
+    
+    width: 350px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.containerLeft img{
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.containerLeft p{
+    display: inline-block;
+    vertical-align: super;
+    line-height: 30px;
+}
+
+.signInContainer{
+    
+    position: absolute;
+    top: 1px;
+    
+    width: 94%;
+    max-width: 560px;
+    height: 80px;
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#phoneInput{
+    color: rgb(136, 153, 166);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 0 0 10px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(25, 39, 52);
+    border-bottom: 1px solid rgb(136, 153, 166);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#passwordInput{
+    color: rgb(136, 153, 166);
+    font-size: 15px;
+    font-weight: 400;
+    padding: 5px 0 0 10px;
+    width: 200px;
+    height: 50px;
+    background-color: rgb(25, 39, 52);
+    border-bottom: 1px solid rgb(136, 153, 166);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    
+}
+
+#signInButtonTwo{
+    color: rgb(29, 161, 242);
+    font-weight: 700;
+    background-color: rgb(21, 32, 43);
+    width: 111px;
+    height: 39px;
+    border: 1px solid rgb(29, 161, 242);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#signInButtonTwo:hover{ background-color: rgb(23, 46, 64);
+}
+.containerRight{
+    color: #FFF;
+    width: 380px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 1.3125;
+    
+    
+
+}
+
+.containerRight img{
+    width:42px;
+    height:36px ;
+}
+
+.containerRight p:nth-child(2){
+    font-size: 30px;
+}
+.containerRight p:nth-child(3){
+    font-size: 16px;
+    
+}
+
+#registerButton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(29, 161, 242);
+    border: 1px solid rgb(29, 161, 242);
+    border-radius: 20px;
+    height: 37px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#signInButton{
+    color: rgb(29, 161, 242);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(21, 32, 43);
+    border: 1px solid rgb(29, 161, 242);
+    border-radius: 20px;
+    height: 37px;
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+
+#registerButton:hover{
+    background-color: rgb(27, 145, 218);
+}
+
+#signInButton:hover{
+background-color: rgb(23, 46, 64);
+}
+
+#name {
+    color: #FFF;
+    background-color: rgb(26, 39, 52);
+    border: none;
+}
+
+
+#password
+{
+    color: #FFF;
+    background-color: rgb(26, 39, 52);
+    border: none;
+}
+
+footer{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+    padding: 10px 15px;
+    background-color:rgb(21, 32, 43);
+    min-width: 400px;
+    color: rgb(136, 153, 166);
+    
+    
+    
+}
+
+footer a{
+    text-decoration: none;
+    margin: 8px 10px;
+    color: rgb(136, 153, 166);
+    font-weight: 400;
+    font-size: 13px;  
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+footer span{
+    margin: 8px 10px;
+    font-weight: 400;
+    font-size: 13px;  
+}
+
+@media only screen and (max-width: 1150px) {
+    .signInContainer {
+      display: none;
+    }
+  }
